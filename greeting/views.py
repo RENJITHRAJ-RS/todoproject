@@ -7,6 +7,8 @@ def greeting(request):
         email = request.GET.get('email')
         return render(request,'form-data.html',{
             'formData':request.GET,
-            'email': email
+            'email': email,
+          
+           
         })
     return render(request,'index.html' )
